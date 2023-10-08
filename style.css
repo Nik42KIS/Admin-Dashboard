@@ -14,7 +14,88 @@
 
 .header{
     grid-area: 1/2/2/3;
+    background-color: brown;
     
+}
+
+.header__wrap{
+    margin: 10px 15px;
+    grid-template-rows: 70px 1fr;
+}
+.header__top{
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 450px ;
+    column-gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.search{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60px 1fr ;
+    
+    /* grid-column: 1/2; */
+}
+.header__top__info{
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr ;
+}
+.info__wrap{
+    display: inline-grid;
+    align-items: center;
+    grid-column: 2/3;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+    /* grid-column: 2/3; */
+}
+
+.header__bottom{
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 450px;
+    align-items: center;
+}
+.header__bottom__profile{
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    align-items: center;
+}
+.header__text{
+    display: grid;
+    grid-template-rows:15px 1fr;
+}
+.profile__name{
+    font-size: 2rem;
+}
+.header__bottom__list{
+    
+}
+.header__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 30px;
+    list-style-type: none;
+    justify-items: end;
+    
+}
+
+
+
+.list__link{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
+.ava{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    background-color: white;
 }
 
 .sidebar{
