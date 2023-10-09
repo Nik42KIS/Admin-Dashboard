@@ -174,9 +174,45 @@ color: white;
     color: bisque;
 }
 .content{
+    padding: 15px;
     background-color: #fee2d6;
-}
+    display: grid;
+    grid-template-columns: 1fr minmax(150px, 350px);
+    
 
+}
+.projects{
+    margin-right: 15px;
+}
+.projects__title{
+    margin-bottom: 10px;
+}
+.projects__items{
+    display: grid;
+    height: 85%;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+    
+    
+}
+.projects__item{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-rows: 1fr 30px ;
+    border-left: 12px dotted #fee2d6;
+    
+}
+.projects__buttons{
+    justify-self: end;
+    
+}
+.projects__buttons img {
+  margin-left: 10px;
+}
 .trending__icon{
     height: 35px;
     width: 35px;
