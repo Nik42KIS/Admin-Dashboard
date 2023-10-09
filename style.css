@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: Lato, sans-serif;
     /* outline: 2px solid black; */
 }
 
@@ -14,10 +17,10 @@
 }
 
 .header{
+    font-weight: bold;
     grid-area: 1/2/2/3;
-    
-    background-color: #ff957f;
-    
+    border-bottom: 20px rgba(0, 0, 0, 0.5);
+    background-color: #ff957f ;
 }
 
 .header__wrap{
@@ -39,11 +42,16 @@
     /* grid-column: 1/2; */
 }
 .header__input{
-    border-radius: 10px;
-    height: 25px;
+    border-radius: 15px;
+    height: 35px;
     font-size: 16px;
     border: none;
-    background-color: rgb(232, 150, 150);
+    background-color: #0a0a0a;
+    color: white;
+}
+.header__input::placeholder{
+    padding-left: 20px;
+    color: white ;
 }
 .header__input:focus{
     outline: none;
@@ -145,8 +153,15 @@ color: white;
 
 
 .sidebar__top{
-    font-size: 2.55rem;
+    font-size: 2.3rem;
+    height: 100px;
+    width: 100%;
+    
+}
 
+.sidebar__top:hover{
+    cursor: pointer;
+    color: white;
 }
 
 .sidebar__nav{
@@ -154,7 +169,7 @@ color: white;
     /* padding-left: 10px ; */
     margin-top: 50px;
     font-size: 1.6rem;
-    
+    margin-left: 15px;
 }
 
 .list1{
@@ -167,8 +182,12 @@ color: white;
 }
 .sidebar__list__item {
     margin-bottom: 10px;
+    transition: ease-in 1s;
+
+}
+.sidebar__list__item:hover{
+    border-bottom: 2px solid bisque;
     
-  
 }
 .sidebar__list__item a{
     text-decoration: none;
@@ -198,7 +217,7 @@ color: white;
     
 }
 .projects__item{
-  background-color: white;
+  background-color: rgb(244, 244, 244);
   padding: 10px;
   border-radius: 5px;
     font-size: 1.2rem;
@@ -206,6 +225,10 @@ color: white;
     grid-template-rows: 1fr 30px ;
     border-left: 12px dotted #fee2d6;
     
+}
+
+.projects__item:hover{
+    background-color: white;
 }
 .projects__buttons{
     justify-self: end;
@@ -230,10 +253,13 @@ color: white;
     font-size: 1.3rem;
 }
 .announcements__wrap{
-    background-color: white;
+    background-color: rgb(244, 244, 244);
     border-radius: 5px;
     padding: 20px 25px 10px 25px;
     width: 360px;
+}
+.announcements__wrap:hover{
+    background-color: white;
 }
 .about__text{
     margin-bottom: 5px;
@@ -244,16 +270,27 @@ color: white;
     display: grid;
     border-radius: 5px;
     padding: 15px 25px 10px 25px;
-    background-color: white;
+    background-color: rgb(244, 244, 244);
     grid-template-rows: repeat(4, 40px);
     width: 360px;
+}
+.trending__wrap:hover{
+    background-color: white;
+
 }
 .trending__item{
     display: grid;
     grid-template-columns: 50px 1fr;
+    align-items: center;
 }
-
+.about__trending__text, .about__item__text, .item__text__info{
+    color: rgb(97, 96, 96);
+    font-style: italic;
+}
+.trending__name{
+    font-weight: bold;
+}
 .trending .about__title{
-    margin-top: 10px;
+    margin-top: 23px;
     margin-bottom: 12px;
 }
